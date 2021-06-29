@@ -1,0 +1,24 @@
+body {
+	background-image: url("Image\bubbles-20111-1920x1200.jpg");
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #72CDF9;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: right;
+  font-size: 18px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+

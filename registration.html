@@ -1,0 +1,151 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" 
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Registration Page</title>
+    <a href="F:\Sem 3\HTML\New folder\website.html"><b>HOME</b></a>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+		 
+body{
+	height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack:center;
+	-ms-flex-pack:center;
+	justify-content: center;
+	align-items: center;
+	perspective: 1000px;
+	transform-style: preserve-3d;
+	position: relative;
+	background-color: #27728D;
+	font-family: arial;
+}
+.container{
+	min-width: 700px;
+	min-height: 500px;
+	border-radius: 20px;
+	position: relative;
+	transition: 1.5s ease-in-out;
+	transform-style: preserve-3d;
+}
+.side {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 20px 50px;
+	color: white;
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+	border-radius: 20px;
+}
+.content{
+    transform: translateZ(70px)
+    scale:(0.8);
+	line-height: 1.5em;
+}
+.content h1{
+	color: #3D33FF;
+    position: relative;
+    font-size: 40px;
+	font-family: arial;
+}
+.content h1:before {
+    content: "";
+	position: absolute;
+	bottom: -20px;
+	height: 3px;
+	background-color: #3D33FF;
+	width: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.front{ 
+    z-index: 2;
+	background: url("SAT_Registration.jpeg");
+	background-size: cover;
+	background-size: 145vh;
+	color: white;
+}
+.back{
+    background-color: #333;
+    transform: rotateY(180deg);
+	z-index: 0;
+	padding-top: 10px;
+	background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWVPlNA4wfWaZH7rmIPvcfuq3jNw2f2jH4Emav-0pjuXdhfKY22A");
+	background-size: cover;
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
+back h1{
+    margin: 0;
+}
+form label, form input{
+    display: block;
+}
+form input, form textarea{
+    background: transparent;
+	border: 0;
+	border-bottom: 2px solid white;
+	padding: 5px;
+	width: 100%;
+	color: white;
+	outline: none;
+}
+form label{
+    margin: 15px 0;
+}
+form input[type="submit"]{
+    display: block;
+	width: auto;
+	margin: 10px auto;
+	padding: 5px 10px;
+	border: 3px solid white;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+}
+
+</style>
+
+</head>
+<body>
+
+     <div class="container">
+	     <div class="front side">
+		     <div class="content">
+			 <h1> Register </h1>
+		 </div>
+		 </div>
+		
+		<div class="back side">
+		     <div class="content">
+				 
+				 <form>
+				     <label>User Name :</label>
+					 <input type="text" placeholder="Put Your Username">
+					 <label>Your E-mail :</label>
+					 <input  type="text"placeholder="Example@gmail.com">
+					 <label>Your Number :</label>
+					 <textarea placeholder="The Subject"></textarea>
+					 <label>Password :</label>
+					 <input type="password" name="" required=""placeholder="**********">
+					 <label>Confirm Password :</label>
+					 <input type="password" name="" required=""placeholder="**********">
+					 <input type="submit" value="Submit">
+				 </form>
+				 
+			 </div>
+		 </div>
+	 
+	 </div>
+</body>
+</html>
